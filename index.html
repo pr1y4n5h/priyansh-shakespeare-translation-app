@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespearean Translator</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Merienda:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+
+        #btnn {
+
+            text-align: center;
+
+        }
+
+        button {
+            background-color: black;
+            height: 1.5rem;
+            width: 7%;
+            color: cornsilk;
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+
+
+
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+
+        h1 {
+            color: whitesmoke;
+            font-family: 'Amita', cursive;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #020202;
+            height: 4rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 0rem;
+            border-bottom-left-radius: 100rem;
+            border-bottom-right-radius:100rem;
+            
+        }
+
+        footer {
+            background-color: #020202;
+            height: 7rem;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 0rem;
+            border-top-left-radius: 100rem;
+            border-top-right-radius:100rem;
+
+        }
+
+        body {
+            background-color: #FFFFFF;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;;
+
+        }
+
+        textarea {
+            border: 3px solid black ;
+            font-size: medium;
+            border-radius: 3rem;
+            background-color: cornsilk;
+            width: 75%;
+            font-family: 'Merienda', cursive;
+            display: block;
+            margin-left: 10rem;
+            margin-right: 4rem;;
+            height: 10vh;
+            padding:1.5rem;
+        }
+
+        #blw {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        
+        #output {
+            border: 3px solid black ;
+            border-radius: 2rem;
+            padding:1.5rem;
+            width: 71%;
+            background-color:cornsilk;
+            font-family: 'Berkshire Swash', cursive;
+            display: block;
+            margin-left: 12rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            height: 10vh;
+            
+        }
+
+        .para {
+            color: black;
+            font-family: 'Berkshire Swash', cursive;
+            font-family: 'Merienda', cursive;
+            width: 40%;
+            padding-top: 5rem;
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1> Shakespearean Translator </h1>
+    </nav>
+    <header>
+        <p class="para">
+            William Shakespeare is the best-known and most-loved playwright in English history. So, what better way to improve your English language skills than through an app that can covert your normal English to the Shakespearean English...
+        </p>
+        <img src="images/Shakespeare.jpg" />
+    </header>
+    <br>
+    <div>
+    <textarea id="text-area" placeholder="Enter your text here that needs to be translated..."></textarea>
+    <br>
+</div>
+<div id="btnn">
+    <button id="btn-Main"> Translate </button>
+</div>
+    <br>
+    <div id="blw" style="font-family: 'Berkshire Swash', cursive; font-size: x-large;">You have your translation below </div>
+    <br>
+    <div id="output"></div>
+    <script src="app.js" type="text/javascript"></script>
+
+    <footer>
+        <h1>
+        Made with ❤️
+        </h1>
+        
+
+
+    </footer>
+</body>
+
+</html>
